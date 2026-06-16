@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: talent-assessment-platform
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    disk:
+      name: database_volume
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_PATH
+        value: /data/database.json
+      - key: GEMINI_API_KEY
+        sync: false # Set your Gemini API Key in the Render UI to enable AI Feedback reports!

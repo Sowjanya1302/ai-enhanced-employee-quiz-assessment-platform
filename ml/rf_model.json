@@ -1,0 +1,244 @@
+{
+  "trees": [
+    {
+      "isLeaf": false,
+      "feature": "time_taken",
+      "threshold": 417.5,
+      "left": {
+        "isLeaf": true,
+        "value": "High Performer"
+      },
+      "right": {
+        "isLeaf": false,
+        "feature": "attempts",
+        "threshold": 2.5,
+        "left": {
+          "isLeaf": true,
+          "value": "Average Performer"
+        },
+        "right": {
+          "isLeaf": true,
+          "value": "Needs Improvement"
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "feature": "attempts",
+      "threshold": 2.5,
+      "left": {
+        "isLeaf": false,
+        "feature": "time_taken",
+        "threshold": 412.5,
+        "left": {
+          "isLeaf": true,
+          "value": "High Performer"
+        },
+        "right": {
+          "isLeaf": false,
+          "feature": "accuracy_percentage",
+          "threshold": 91,
+          "left": {
+            "isLeaf": true,
+            "value": "Average Performer"
+          },
+          "right": {
+            "isLeaf": true,
+            "value": "High Performer"
+          }
+        }
+      },
+      "right": {
+        "isLeaf": true,
+        "value": "Needs Improvement"
+      }
+    },
+    {
+      "isLeaf": false,
+      "feature": "accuracy_percentage",
+      "threshold": 81.5,
+      "left": {
+        "isLeaf": false,
+        "feature": "accuracy_percentage",
+        "threshold": 54.5,
+        "left": {
+          "isLeaf": true,
+          "value": "Needs Improvement"
+        },
+        "right": {
+          "isLeaf": false,
+          "feature": "quiz_score",
+          "threshold": 53,
+          "left": {
+            "isLeaf": true,
+            "value": "Needs Improvement"
+          },
+          "right": {
+            "isLeaf": false,
+            "feature": "time_taken",
+            "threshold": 1012.5,
+            "left": {
+              "isLeaf": true,
+              "value": "Average Performer"
+            },
+            "right": {
+              "isLeaf": true,
+              "value": "Needs Improvement"
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": true,
+        "value": "High Performer"
+      }
+    },
+    {
+      "isLeaf": false,
+      "feature": "time_taken",
+      "threshold": 412,
+      "left": {
+        "isLeaf": true,
+        "value": "High Performer"
+      },
+      "right": {
+        "isLeaf": false,
+        "feature": "accuracy_percentage",
+        "threshold": 54.5,
+        "left": {
+          "isLeaf": false,
+          "feature": "time_taken",
+          "threshold": 996.5,
+          "left": {
+            "isLeaf": false,
+            "feature": "time_taken",
+            "threshold": 986,
+            "left": {
+              "isLeaf": true,
+              "value": "Needs Improvement"
+            },
+            "right": {
+              "isLeaf": true,
+              "value": "Average Performer"
+            }
+          },
+          "right": {
+            "isLeaf": true,
+            "value": "Needs Improvement"
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "feature": "quiz_score",
+          "threshold": 53,
+          "left": {
+            "isLeaf": true,
+            "value": "Needs Improvement"
+          },
+          "right": {
+            "isLeaf": false,
+            "feature": "time_taken",
+            "threshold": 1007,
+            "left": {
+              "isLeaf": true,
+              "value": "Average Performer"
+            },
+            "right": {
+              "isLeaf": true,
+              "value": "Needs Improvement"
+            }
+          }
+        }
+      }
+    },
+    {
+      "isLeaf": false,
+      "feature": "attempts",
+      "threshold": 2.5,
+      "left": {
+        "isLeaf": false,
+        "feature": "time_taken",
+        "threshold": 412.5,
+        "left": {
+          "isLeaf": true,
+          "value": "High Performer"
+        },
+        "right": {
+          "isLeaf": true,
+          "value": "Average Performer"
+        }
+      },
+      "right": {
+        "isLeaf": true,
+        "value": "Needs Improvement"
+      }
+    },
+    {
+      "isLeaf": false,
+      "feature": "attempts",
+      "threshold": 2.5,
+      "left": {
+        "isLeaf": false,
+        "feature": "time_taken",
+        "threshold": 412.5,
+        "left": {
+          "isLeaf": true,
+          "value": "High Performer"
+        },
+        "right": {
+          "isLeaf": true,
+          "value": "Average Performer"
+        }
+      },
+      "right": {
+        "isLeaf": true,
+        "value": "Needs Improvement"
+      }
+    },
+    {
+      "isLeaf": false,
+      "feature": "accuracy_percentage",
+      "threshold": 81.5,
+      "left": {
+        "isLeaf": false,
+        "feature": "attempts",
+        "threshold": 2.5,
+        "left": {
+          "isLeaf": true,
+          "value": "Average Performer"
+        },
+        "right": {
+          "isLeaf": true,
+          "value": "Needs Improvement"
+        }
+      },
+      "right": {
+        "isLeaf": true,
+        "value": "High Performer"
+      }
+    }
+  ],
+  "accuracy": 0.990909090909091,
+  "confusionMatrix": {
+    "Needs Improvement": {
+      "Needs Improvement": 36,
+      "Average Performer": 0,
+      "High Performer": 0
+    },
+    "Average Performer": {
+      "Needs Improvement": 0,
+      "Average Performer": 43,
+      "High Performer": 0
+    },
+    "High Performer": {
+      "Needs Improvement": 0,
+      "Average Performer": 1,
+      "High Performer": 30
+    }
+  },
+  "classes": [
+    "Needs Improvement",
+    "Average Performer",
+    "High Performer"
+  ]
+}

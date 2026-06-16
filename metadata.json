@@ -1,0 +1,6 @@
+{
+  "name": "AI-Enhanced Employee Quiz & Assessment Platform",
+  "description": "A comprehensive production-ready platform featuring customizable quizzes, automated scoring, interactive analytics, a tailored Random Forest performance predictor, and personalized Gemini AI feedback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
